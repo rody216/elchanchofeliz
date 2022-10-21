@@ -1,0 +1,38 @@
+.portafolio{
+    background: #f0f3f5;
+    padding: 1px 10;
+}
+
+.portafolio .portafolio-textos{
+    text-align: center;
+    margin-bottom: 10px;
+    color:#2d3950;
+    font-size: 20px;
+}
+
+.portafolio .portafolio-textos p{
+    color: #fdfcfc;
+    font-size: 15px;
+    margin:20px 0 0 0;
+}
+
+.portafolio .galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portafolio .galeria .fotos{
+    width: 30%;
+    margin-bottom:5px;
+}
+
+.portafolio .galeria .fotos img{
+    width: 100%;
+    height:210px;
+    border-radius: 5px;
+}
+.portafolio .galeria .fotos img:hover{
+    opacity:.6;
+    cursor: pointer;
+}
