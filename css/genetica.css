@@ -251,58 +251,6 @@ body{
     width: 40%;
 }
 
-/* Footer */
-
-footer{
-    background: #d6d3d3;
-    
-    padding: 20px 0;
-    text-align: center;
-}
-
-.form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.input{
-    background: transparent;
-    border: 0;
-    color: rgb(3, 3, 3);
-    outline: none;    
-    border: 1px solid rgb(251, 251, 251);
-    padding: 20px 10px;
-}
-
-.input::placeholder{
-    color: rgb(7, 7, 7);
-    font-family: "raleway";
-}
-
-.input[type="text"],
-.input[type="email"]{
-    display: inline-block;
-    width: 49%;
-    margin-bottom: 30px;
-}
-
-.form textarea{
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.input[type="submit"]{
-    width: 120px;
-    text-align: center;
-    padding: 14px 0;
-    margin-bottom: 0;
-}
-
-input[type="submit"]:hover{
-    cursor: pointer;
-    background: rgb(127, 127, 127);
-}
 
 /* Media Queries */
 
