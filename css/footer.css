@@ -1,0 +1,81 @@
+
+contact .contacto{
+    height:620px;
+    background-image: url(../img/footer.png);
+    background-position:center;
+    padding:10px 0;
+}
+
+contact .contact-textos{
+    text-align: center;
+    color: #fff;
+    font-size:25px;
+}
+
+contact .contact-textos p{
+    font-size: 14px;
+    margin:15px 0 30px 0;
+    color: #999999;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 90%;
+    
+}
+contact .contacto  input[type="text"], contact .contacto  input[type="email"],
+contact .contacto  textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 20px;
+    background: none;
+    border-radius: 5px;
+    color:rgb(204, 204, 204);
+    border: 2px solid rgba(204, 204, 204, 0.383);
+    font-family: 'lato';
+    font-weight: 300;
+}
+
+contact .contacto  textarea{
+    height:150px;
+    max-height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+}
+.derecha{
+   display: flex;
+   justify-content: flex-end;
+}
+contact .contacto  input[type="submit"]{
+    display:block;
+    width: 100px;
+    margin:10px 0;
+    padding: 10px 15px;
+    background: none;
+    border:1px solid #15a4fa;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+    float:right;
+
+}
+contact .contacto  input[type="submit"]:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+
+.contact{
+    height:200px;
+    background: #000;
+}
+
+/* Poner los botones de social media con un margen inferior de 15px */
+.social-media{
+    margin-bottom: 15px;
+    
+}
+
+
