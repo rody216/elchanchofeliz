@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Granja Porcicola El Chancho Feliz</title>
+    <link rel="icon" type="image/png" href="img/pig.png">
+    <title>El Chancho Feliz</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap" rel="stylesheet">
     <link
@@ -15,13 +16,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
     />
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/profile.css" />
     <link rel="stylesheet" href="css/skills.css" />
     <link rel="stylesheet" href="css/genetica.css" />
-    <link rel="stylesheet" href="css/experiences.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/experiences.css" />
     <link rel="stylesheet" href="css/galeria.css" />
     <script defer src="js/app.js"></script>
   </head>
@@ -30,13 +33,13 @@
       <nav class="topnav">
         <a href="#" class="logo">
           <img
-            height="50"
-            width="50"
+            height="60"
+            width="60"
             src="img/pig.png"
-            alt="programador"
+            alt="imagen de cerdo"
           />
           <div class="logotype">
-            Granja Porcicola El Chancho Feliz.<br />            
+            Granja Porcicola<br />            
           </div>
         </a>
         <button class="open-menu" aria-label="Abrir menú">
@@ -54,14 +57,19 @@
         </ul>
       </nav>
     </header>
+    <!-- Colocar un audio en formato mp3 que se ejecute automaticamente se cargue la paginam, pero que tenga los controles y este justificado a la derecha, y que se reproduzca en bucle infinito hasta que se detenga con los controles -->
+    <audio class="audio" controls autoplay loop style="float: right;">
+      <source src="audio/porcino.mp3" type="audio/mp3">
+    </audio>     
 
-    <div class="horizontal-padding vertical-padding">
+    <div class="horizontal-padding vertical-padding primera">
       <section class="profile" id="profile">
         <div class="profile-info"><br><br>
-          <h1 class="profile-title">Granja<br />El Chancho Feliz</h1>
+          <h1 class="profile-title">Granja<br />El Chancho Feliz</h1>  
           <p class="profile-details">
-            La mejor Granja Porcicola de la región.<br /><br>
-            Comercializamos Lechones de excelente genética para su cría,Cerdos para sacrificio, de buena genética y en excelentes condiciones, también fabricamos y comercializamos el alimento balanceado que se les suministra, el cual fabricamos con los mejores estándares de calidadd.
+            Lechones de excelente genética para su Cría y Consumo.
+            <br><br>
+            Alimento balanceado, con los mejores estándares de calidad.
           </p>
           <!-- <button class="profile-btn">Descargar cv</button> -->
         </div>
@@ -84,25 +92,23 @@
           <div class="content-cards">              
               <article class="card">
                   <img src="img/largewhite.png" alt="">
-                  <h3>Large White</h3>
-                  <p>Esta raza se caracteriza por su prolificidad .</p>
-                  <a href="" class="cta">Saber Más</a>
+                  <h3 style = "color:white">Large White</h3>
+                  <p style = "color:white">Esta raza se caracteriza por su prolificidad .</p>
+                  <a href="./large.html" class="cta">Saber Más</a>
               </article>
   
-              <article class="card">
-                  <!-- <i class="fas fa-database"></i> -->
+              <article class="card">                 
                   <img src="img/pietran.png" alt="">
-                  <h3>Pietrain</h3>
-                  <p>Se caracterza por producir carne magra.</p>
-                  <a href="" class="cta">Saber Más</a>
+                  <h3 style = "color:white">Pietrain</h3>
+                  <p style = "color:white">Se caracterza por producir carne magra.</p>
+                  <a href="./pietran.html" class="cta">Saber Más</a>
               </article>
   
-              <article class="card">
-                  <!-- <i class="far fa-object-group"></i> -->
+              <article class="card">                  
                   <img src="img/landrace.png" alt="">
-                  <h3>Landrace</h3>
-                  <p>Se caracteriza por su gran adaptabilidad al medio.</p>
-                  <a href="" class="cta">Saber Más</a>
+                  <h3 style = "color:white">Landrace</h3>
+                  <p style = "color:white">Se caracteriza por su gran adaptabilidad al medio.</p>
+                  <a href="./landrace.html" class="cta">Saber Más</a>
               </article>
           </div>
       </section>          
@@ -113,7 +119,7 @@
     </section>
 
     <div class="horizontal-padding vertical-padding">
-      <section class="skills" id="skills">
+      <section class="skills producto" id="skills">
         <h2 class="skills-title">Nuestros Productos</h2>
         <section class="cards contenedor">          
           <div class="content-cards">              
@@ -128,7 +134,7 @@
                   <!-- <i class="fas fa-database"></i> -->
                   <img src="img/bulto.png" alt="">
                   <h3>Alimento Balanceado</h3>
-                  <p>Con los más altos estándares.</p>
+                  <p>Con altos estándares de Calidad.</p>
                   <a href="" class="cta">Saber Más</a>
               </article>
   
@@ -177,29 +183,45 @@
         <div class="horizontal-padding vertical-padding">
           <section class="skills" id="contact">
             <h2 class="skills-title">Contacta con nosostros</h2>
-            <footer>
+            <contact>
               <section class="contacto">
-                  <div class="contenedor">
-                      <div class="footer-textos">
-                          <h2></h2>
-                          
-                      </div>
+                  <div class="contenedor">                      
+
                       <form action="" class="formulario" method="POST">
                           <input type="text" placeholder="Nombre" id="nombre" name="nombre" required value="">
                           <input type="email" placeholder="Correo" id="correo" name="correo" required value="" class="email">
+                          <input type="text" placeholder="Teléfono" id="telefono" name="telefono" required value="">
                           <textarea name="mensaje" id="mensaje" placeholder="Mensaje:"></textarea>
                          <div class="derecha">
                           <input class="boton derecha" type="submit" value="Contactar" name="submmit">
                           </div>
+
+
+                          <div class="social-media">
+                            <a href="https://api.whatsapp.com/send?phone=573122636422&text=Hola." target="_blank" class="social-media-icon">
+                                <i class='bx bxl-whatsapp' ></i>
+                            </a>
+                            <a href="https://www.facebook.com/rodolfo.alvarez.754/" target="_blank" class="social-media-icon">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="" class="social-media-icon">
+                                <i class='bx bxl-twitter' ></i>
+                            </a>
+                            <a href="https://www.instagram.com/rodolfoalvarez/" target="_blank" class="social-media-icon">
+                                <i class='bx bxl-instagram' ></i>
+                            </a>
+                        </div>
                       </form>
                   </div>
               </section>
-          </footer>
+          </contact>
           </section>
 
     </div>
+
+   
+
     <script src="https://kit.fontawesome.com/7033b9db97.js" crossorigin="anonymous"></script>
 
-    
   </body>
 </html>
